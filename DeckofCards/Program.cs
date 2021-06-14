@@ -18,7 +18,7 @@ namespace DeckofCards
             }
 
             Deck PlayDeck = new Deck();
-            PlayDeck.Shuffle();
+            //PlayDeck.Shuffle();
             Console.WriteLine(" Total Cards - " + PlayDeck.Cards.Count);
             Console.WriteLine(" *******************");
 
@@ -29,7 +29,7 @@ namespace DeckofCards
                 Card TakenCard = PlayDeck.TakeCard();
                 Utility.CardNumberEnum Cenum = (Utility.CardNumberEnum)TakenCard.CardNumber;
 
-                Console.WriteLine("{0} of {1}", Cenum.ToString(), TakenCard.Suit);
+                Console.WriteLine("{0} Value {1}", TakenCard.CardName, TakenCard.CardValue);
                 Console.WriteLine("*******************");
                 Console.WriteLine("Cards Left in Deck - " + PlayDeck.Cards.Count);
             

@@ -15,7 +15,8 @@ namespace DeckofCards
 
             foreach (var suit in new[] { "Spades", "Hearts", "Clubs", "Diamonds" })
             {
-                for (var cardNumber = 1; cardNumber <= 13; cardNumber++)
+                Console.WriteLine("^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%  Suit -- " + suit);
+                for (var cardNumber = 13; cardNumber > 0; cardNumber -= 1)
                 {
                     Card newcard = new Card(cardNumber, suit);
                     Cards.Add(newcard);

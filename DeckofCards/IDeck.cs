@@ -10,7 +10,6 @@ namespace DeckofCards
     {
         Card TakeCard();
         void Shuffle();
-        
         Deck Reset();
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DeckofCards
 {
-    class Utility
+    public class Utility
     {
         public enum CardNumberEnum
         {
@@ -42,7 +42,13 @@ namespace DeckofCards
 
         };
 
-       
+        public enum SuitEnum
+        {
+            Club = 1,
+            Diamond = 2,
+            Heart = 3,
+            Spades = 4,
+        }
 
     }
 }
